@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## 2024.01.12-10.44.32
+
+## 2024.01.12-10.42.17
+
 - Editor
   - Fix `didChangeConfiguration` throwing exception. #1749
 
