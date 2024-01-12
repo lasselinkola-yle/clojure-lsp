@@ -132,6 +132,7 @@
                         "--no-fallback"
                         "--native-image-info"
                         "--features=clj_easy.graal_build_time.InitClojureClasses"
+                        (when (= (System/getProperty "os.arch") "aarch64") "-H:PageSize=65536")
                         (when-not (fs/windows?) "-march=compatibility")
                         "-O1"
                         (when-not (or (:pgo-instrument opts)
